@@ -14,5 +14,4 @@ use App\Http\Controllers\PrecoController;
 |
 */
 
- 
 Route::get('/', [PrecoController::class, 'preco']);
