@@ -14,9 +14,4 @@ use App\Http\Controllers\PrecoController;
 |
 */
 
-
-Route::get('/', function () {
-    return view('master');
-});
- 
-Route::get('/preco', [PrecoController::class, 'preco']);
+Route::get('/', [PrecoController::class, 'preco']);
