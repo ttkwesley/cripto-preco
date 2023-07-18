@@ -1,0 +1,73 @@
+.cripto-cor {
+    color: #a6a4a2;
+}
+
+strong {
+    color: #292423
+}
+
+.card {
+    outline: none;
+    border: none;
+    background-color: #f4f4f4;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    width: 16em;
+    --bs-card-title-spacer-y: none;
+}
+
+.cinza {
+    color: grey;
+}
+
+.card:hover {
+    background-color: #292423;
+    color: white;
+}
+
+.zoom-on-hover {
+    transition: transform 0.5s ease
+}
+
+.zoom-on-hover:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+}
+
+.cripto-icon {
+    height: 1.2em;
+    width: 1.2em;
+}
+
+h1 {
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.select-personalizado {
+    width: 35%;
+    padding: 7px;
+    outline: none;
+    border: none;
+    background-color: #f4f4f4;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+}
+
+.cinza {
+    color: #a6a4a2;
+    font-size: 50px;
+}
+
+.select-personalizado:focus {
+    border: none;
+    outline: none;
+    background-color: #292423;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: none;
+
+}
+
+.espaco {
+    padding-top: 30px;
+}

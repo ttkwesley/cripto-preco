@@ -1,11 +1,11 @@
 <template>
-  <div class="mt-5">
+  <div class="mt-5 container">
     <h1 class="d-flex justify-content-center align-items-center">
       <span class="cripto-cor">CRIPTO</span><strong>PREÇO</strong>
     </h1>
     <div class="d-flex justify-content-center align-items-center">
     <select v-model="selecionarMoeda" @change="addCard" class="select-personalizado">
-      <option value="" disabled><span class="selecione">Selecione uma criptomoeda...</span></option>
+      <option value="" disabled>Selecione uma criptomoeda...</option>
       <option value="bitcoin">Bitcoin</option>
       <option value="ethereum">Ethereum</option>
       <option value="cardano">Cardano</option>
@@ -19,17 +19,17 @@
   
   <div class="container d-flex justify-content-center align-items-center espaco">
     <div class="row">
-    <ul class="list-unstyled d-flex flex-wrap ml-5">
-      <li v-for="(moeda, index) in moedasSelecionadas" :key="index" class="card mt-3 ms-4 position-relative zoom-on-hover">
+    <ul class="list-unstyled d-flex flex-wrap">
+      <li v-for="(moeda, index) in moedasSelecionadas" :key="index" class="col-lg-3 col-md-3 card mt-4 ms-5 zoom-on-hover">
         <div class="card-body text-center">
           <button @click="removerMoeda(index)" class="btn btn-sm position-absolute top-0 end-0">
             <i class="fas fa-times branco"></i>
           </button>
           <h5 v-if="moeda.nome === 'bitcoin'" class="card-title">
-            <i class="fa-brands fa-bitcoin fa-fade fa-xl" style="color: #cbc515;"></i>Bitcoin <span style="color:#cbc515">ᵇᵗᶜ</span>
+            <i class="fa-brands fa-bitcoin fa-xl" style="color: #cbc515;"></i>Bitcoin <span style="color:#cbc515">ᵇᵗᶜ</span>
           </h5>
           <h5 v-else-if="moeda.nome === 'ethereum'" class="card-title">
-            <i class="fa-brands fa-ethereum fa-fade fa-xl" style="color: #949494;"></i>Ethereum <span style="color: #949494;">ᵉᵗʰ</span>
+            <i class="fa-brands fa-ethereum fa-xl" style="color: #949494;"></i>Ethereum <span style="color: #949494;">ᵉᵗʰ</span>
           </h5>
           <h5 v-else-if="moeda.nome === 'cardano'" class="card-title">
             <img class="cripto-icon" src="https://s3.eu-central-1.amazonaws.com/bbxt-static-icons/type-id/png_512/2701173b1b7740f286939659359e225c.png" alt="">Cardano <span style="color: #61c1f9;">ᵃᵈᵃ</span>
@@ -44,7 +44,7 @@
             <img class="cripto-icon" src="https://assets-global.website-files.com/5e73a1e3ba24f2cd5dd2232a/62337715d748ddd7931c11dd_sol.png" alt="">Solana <span style="color: #ba4bea;">ˢᵒˡ</span>
           </h5>
           <h5 v-else-if="moeda.nome === 'xrp'" class="card-title">
-            <img class="cripto-icon" src="https://i.pinimg.com/originals/e6/9d/92/e69d92c8f36c37c84ecf8104e1fc386d.png" alt="">XRP <span style="color: #303030;">ˣʳᵖ</span>
+            <img class="cripto-icon" src="https://icons.iconarchive.com/icons/cjdowner/cryptocurrency-flat/512/Ripple-XRP-icon.png" alt="">XRP <span style="color: #0eaada;">ˣʳᵖ</span>
           </h5>
           <h5 v-else-if="moeda.nome === 'doge'" class="card-title">
             <img class="cripto-icon" src="https://cdn.freebiesupply.com/logos/large/2x/dogecoin-logo-png-transparent.png" alt="">DogeCoin <span style="color: #d3b50b;">ᵈᵒᵍᵉ</span>
@@ -54,7 +54,7 @@
         </div>
       </li>
     </ul>
-  </div>
+   </div>
   </div>
 </div>
 </template>
